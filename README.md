@@ -1,4 +1,4 @@
-# _Animal wiki_
+# _Celebrity match_
 
 #### _Appointments 01/17/2019_
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a website about animals._
+_This is a website about celebrity matching._
 
 ## Support and contact details
 
