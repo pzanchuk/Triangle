@@ -1,4 +1,4 @@
-# _Celebrity match_
+# _Triangle_
 
 #### _Appointments 01/17/2019_
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a website about celebrity matching._
+_This is a website which defines the type of triangle checking the lengths of the sides._
 
 ## Support and contact details
 
