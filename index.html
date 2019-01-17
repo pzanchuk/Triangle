@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Animal wiki</title>
-</head>
-<body>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebtity match</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Celebrity matching</h1>
+      <h2>Please make pick below and we are going to match what celebrity matches you best.
+      </h2>
+<!-- ============================================================================ -->
+      <form id="main-form">
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Animal-wiki</h1>
-  </div>
 
-  <div id="mainButtons">
+        <div id="name-control" class="form-group">
+          <label for="name" class="control-label">Your name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
 
-    <h2>Choose which animal class would you like to explore?</h2>
+        <div id="age-control" class="form-group">
+          <label for="age" class="control-label">Your age</label>
+          <input type="number" class="form-control" id="age">
+        </div>
 
-    <form id="formOne">
-      <div class="form-group">
-        <label for="animals">Our animals:</label>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>What do you prefer to watch</label>
           <div class="radio">
             <label>
-              <input type="radio" name="animals" value="turtles" checked>
-              Turtles
+              <input type="radio" name="watch" value="movie" checked>
+              Movie
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="animals" value="snakes">
-              Snakes
+              <input type="radio" name="watch" value="cartoon">
+              Cartoon
             </label>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="animals" value="insects">
-              Insects
-            </label>
-          </div>
+        </div>
+        <button type="submit" class="btn btn-info" name="button">Click to match</button>
+      </form>
+      <br>
+
+      <div class="result">
+        <div class="well">
+          <p>Hello <span class="your-name"></span>! Based on your input, we desided that the following character(s) would match your interests the best. Here is your match:</p>
+          <br>
+          <img id="1" src="img/1.png" alt="">
+          <img id="2" src="img/2.png" alt="">
+          <img id="3" src="img/3.jpg" alt="">
+          <img id="4" src="img/4.jpg" alt="">
+          <img id="5" src="img/5.png" alt="">
+          <img id="6" src="img/6.png" alt="">
+          <img id="7" src="img/7.jpg" alt="">
+          <img id="8" src="img/8.jpg" alt="">
+          <img id="9" src="img/9.png" alt="">
+          <img id="10" src="img/10.png" alt="">
+          <img id="11" src="img/11.jpg" alt="">
+          <img id="12" src="img/12.jpg" alt="">
+        </div>
       </div>
 
-      <button class="btn btn-info" type="submit" id="myBtn">GO!</button>
-    </form>
-
-    <div id="turtles">
-        <h2>Turtles</h2>
-        <p class="center"><img src="img/turtles.jpg" alt="Turtles"></p>
-        <p>Turtles are diapsids of the order Testudines (or Chelonii[3]) characterized by a special bony or cartilaginous shell developed from their ribs and acting as a shield.[4] "Turtle" may refer to the order as a whole (American English) or to fresh-water and sea-dwelling testudines (British English).[5] The order Testudines includes both extant (living) and extinct species. The earliest known members of this group date from 220 million years ago,[1][6] making turtles one of the oldest reptile groups and a more ancient group than snakes or crocodilians. Of the 356 known species[2] alive today, some are highly endangered.[2]</p>
     </div>
-    <div id="snakes">
-        <h2>Snakes</h2>
-        <p class="center"><img src="img/snakes.jpeg" alt="Snakes"></p>
-        <p>Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes.[2] Like all squamates, snakes are ectothermic, amniote vertebrates covered in overlapping scales. Many species of snakes have skulls with several more joints than their lizard ancestors, enabling them to swallow prey much larger than their heads with their highly mobile jaws. To accommodate their narrow bodies, snakes' paired organs (such as kidneys) appear one in front of the other instead of side by side, and most have only one functional lung. Some species retain a pelvic girdle with a pair of vestigial claws on either side of the cloaca. Lizards have evolved elongate bodies without limbs or with greatly reduced limbs about twenty five times independently via convergent evolution, leading to many lineages of legless lizards.[3] </p>
-    </div>
-    <div id="insects">
-        <h2>Insects</h2>
-        <p class="center"><img src="img/insects.png" alt="Insects"></p>
-        <p>Insects or Insecta (from Latin insectum) are hexapod invertebrates and the largest group within the arthropod phylum. Definitions and circumscriptions vary; usually, insects comprise a class within the Arthropoda. As used here, the term Insecta is synonymous with Ectognatha. Insects have a chitinous exoskeleton, a three-part body (head, thorax and abdomen), three pairs of jointed legs, compound eyes and one pair of antennae. Insects are the most diverse group of animals; they include more than a million described species and represent more than half of all known living organisms.</p>
-    </div>
-  </div>
-
-
-
-</div>
-
-</body>
+  </body>
 </html>
